@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action = "/books/{{book.id}}" method = "POST">
+    <div>
+        <label for = "title">Title:</label>
+        <input id = "title" name = "title" value = "{{book.title}}" type = "text" required>
+    </div>
+
+    <div>
+        <label for = "year">Year:</label>
+        <input id = "year" name = "year" value = "{{book.year}}" type = "number" required>
+    </div>
+
+    <div>
+        <label for = "author">Author:</label>
+        <select id = "author" name = "author_id">
+            {% for author in authors %}
+                <option value = "{{ author.id }}">{{author.first_name}} {{ author.last_name }}</option> 
+            {% endfor %}
+        </select>
+        <a href="/authors/new">add new author</a>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+{% endblock %}
