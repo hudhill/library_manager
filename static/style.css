@@ -1,20 +1,31 @@
 body{
-    font-family: "Helvetica", arial, sans-serif; font-size: 16px;
-    background-color:darkolivegreen
+    font-family: "Helvetica", arial, sans-serif; 
+    font-size: 16px;
+    background-image: url(/static/img/library.webp);
+    background-size: cover;
   }
   
+  .welcome{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white, 0 0 10px whitesmoke;
+  }
+
   .book {
+    color:azure;
     border: 1px solid #ccc;
-    width: 300px;
-    min-height: 68px;
+    width: 25%;
+    min-height: 100px;
+    min-width: 100px;
     padding: 10px;
-    display: flex;
-    line-height: 18px;
-    margin-bottom: 10px;
+    margin: 10px;
+    background-color:cadetblue;
   }
 
   .title {
-    color:silver;
+    color:azure;
   }
   
   .author {
@@ -24,7 +35,7 @@ body{
   }
   
   .year{
-    color:silver;
+    color:gainsboro;
     font-size: 13px;
     margin-left: 20px;
   }
@@ -44,7 +55,7 @@ body{
     font-size: 100%;
     width : 100%;
     padding: 10px;
-    margin: 10px;
+    margin-right: 10px;
     box-sizing: border-box;
   }
   
@@ -59,23 +70,39 @@ body{
   
   .menu{
     display: flex;
-    padding: 10px;
-    background-color:silver;
+    padding: 15px;
+    background-color:black;
   }
   
   .menu a{
-    color:black;
+    color:azure;
     font-family: "Helvetica", arial, sans-serif; font-size: 14px;
   }
 
   .menu li{
-    padding-right: 10px;
+    padding-right: 20px;
     list-style: none;
   }
   
   .container{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    margin: 0 auto;
+    margin: auto;
+    justify-content: center;
   }
+
+  .show-book {
+    display: block;
+    background-color: cadetblue;
+    padding: 10px;
+    width: 30%
+  }
+
+form{
+  background-color: cadetblue;
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+  min-width: 0;
+}

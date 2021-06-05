@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action = "/books/{{book.id}}" method = "POST">
+<form class="form" action = "/books/{{book.id}}" method = "POST">
     <div>
         <label for = "title">Title:</label>
         <input id = "title" name = "title" value = "{{book.title}}" type = "text" required>
