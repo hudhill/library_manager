@@ -13,7 +13,7 @@ body{
     text-shadow: 1px 1px 2px white, 0 0 10px whitesmoke;
   }
 
-  .book {
+  .item {
     color:azure;
     border: 1px solid #ccc;
     width: 25%;
@@ -92,7 +92,7 @@ body{
     justify-content: center;
   }
 
-  .show-book {
+  .show-single {
     display: block;
     background-color: cadetblue;
     padding: 10px;

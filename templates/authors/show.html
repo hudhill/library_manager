@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="show-single">
+    <h2>{{ author.first_name }} {{ author.last_name}}</h2>
+    <hr/>
+    <a href="/authors/{{ author.id }}/edit">Edit</a>
+</div>
+
+{% endblock %}

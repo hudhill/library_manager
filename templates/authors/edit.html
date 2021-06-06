@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form class="form" action = "/authors/{{author.id}}" method = "POST">
+    <div>
+        <label for = "name">New author:</label>
+        <input id = "first_name" name = "first_name" value = "{{ author.first_name }}" type = "text" required>
+        <input id = "last_name" name = "last_name" value = "{{ author.last_name }}" type = "text" required>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+{% endblock %}
